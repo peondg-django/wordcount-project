@@ -1,0 +1,27 @@
+<html>
+
+<head>
+  <style>
+    a:link, a:visited {
+      color: slateblue;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+<H1>WORD COUNT</H1>
+
+<button><a href ="{% url 'about' %}">About</a></button>
+<br /><br />
+
+<form action="{% url 'count' %}">
+<textarea name="fulltext" rows="10" cols="40"> </textarea>
+<br /> <br /> <br />
+<input type="submit" value="Count!" />
+</form>
+
+
+</body>
+
+</html>
